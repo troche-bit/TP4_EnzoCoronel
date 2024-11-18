@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="estilos/estilo_pagina2.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-message">¡Bienvenidos a la Galería!</h1>
+    </header>
+
+    <main>
+        <section id="user-interaction">
+            <h2>Por favor, ingresa tu edad:</h2>
+            <input type="number" id="user-age" placeholder="Escribe tu edad aquí">
+            <button id="submit-age">Enviar</button>
+        </section>
+
+        <section id="age-response" style="display: none;">
+            <h2 id="age-message"></h2>
+        </section>
+
+        <section id="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="imagenes/image1.jpg" alt="Imagen 1" class="animated-image" id="img1">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/image2.jpg" alt="Imagen 2" class="animated-image" id="img2">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/image3.jpg" alt="Imagen 3" class="animated-image" id="img3">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/image4.jpg" alt="Imagen 4" class="animated-image" id="img4">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/image5.jpg" alt="Imagen 5" class="animated-image" id="img5">
+                </div>
+            </div>
+        </section>
+
+        <section id="navigation">
+            <h2>Explora más:</h2>
+            <div class="buttons-container">
+                <button class="animated-button" onclick="window.location.href='index.html'">Inicio</button>
+                <button class="animated-button" onclick="window.location.href='pagina2.html'">Galería</button>
+                <button class="animated-button" onclick="window.location.href='pagina3.html'">Operaciones</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Derechos reservado por Enzo Coronel - Ñemby - 2024</p>
+    </footer>
+
+    <script src="scripts/script_pagina2.js"></script>
+</body>
+</html>

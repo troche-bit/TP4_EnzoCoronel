@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-Operation</title>
+    <link rel="stylesheet" href="estilos/estilo_index.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-message">¡Bienvenidos!</h1>
+    </header>
+
+    <main>
+        <section id="user-interaction">
+            <h2>Por favor, ingresa tu nombre:</h2>
+            <input type="text" id="user-name" placeholder="Escribe tu nombre aquí">
+            <button id="submit-name">Enviar</button>
+        </section>
+
+        <section id="personalized-welcome" style="display: none;">
+            <h2>Bienvenido, <span id="user-display"></span>!</h2>
+        </section>
+
+        <section id="page-links">
+            <h2>Explora nuestras páginas:</h2>
+            <div class="buttons-container">
+                <button class="animated-button" onclick="window.location.href='index.html'">
+                    Inicio
+                </button>
+                <button class="animated-button" onclick="window.location.href='pagina2.html'">
+                    Galería
+                </button>
+                <button class="animated-button" onclick="window.location.href='pagina3.html'">
+                    Operaciones
+                </button>
+            </div>
+        </section>
+
+        <section id="page-descriptions">
+            <h2>Contenido de las páginas:</h2>
+            <p><strong>Inicio:</strong> Queremos conocerte, el primer paso para ello que nos indiques tu nombre y apellido.</p>
+            <p><strong>Galería:</strong> Aquí tambien querremos saber de ti; ¿Cuantos años tienes? <br> Tambien podras ver imagenes de paisajes!!.</p>
+            <p><strong>Operaciones:</strong> Aquí podras realizar ciertas operaciones matematicas..</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Derechos reservado por Enzo Coronel - Ñemby - 2024</p>
+    </footer>
+
+    <script src="scripts/script_index.js"></script>
+</body>
+</html>

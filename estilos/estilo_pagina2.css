@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #28b3dd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animated-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #28b3dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.animated-button:hover {
+    background-color: #28b3dd;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Galería */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Animaciones de imágenes */
+#img1:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+#img2:hover {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+#img3:hover {
+    transform: rotateY(180deg);
+}
+
+#img4:hover {
+    transform: rotateX(180deg);
+}
+
+#img5:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
